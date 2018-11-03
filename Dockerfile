@@ -18,8 +18,8 @@ RUN apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C3
 # update apt lists and install system libraries, then clean the apt cache
 RUN apt update && apt install -y \
     ros-$ROS_DISTRO-desktop \
-# clean the apt cache
-&& rm -rf /var/lib/apt/lists/*
+    # clean the apt cache
+    && rm -rf /var/lib/apt/lists/*
 
 # copy and set entrypoint
 COPY docker-assets/entrypoint.sh /entrypoint.sh
