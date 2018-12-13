@@ -1,7 +1,7 @@
 FROM ripl/lcm:1.4.0
 
 # set ROS codename
-ENV ROS_DISTRO "kinetic"
+ENV ROS_DISTRO "indigo"
 
 # set default ROS master hostname
 ENV ROS_MASTER_HOST "localhost"
