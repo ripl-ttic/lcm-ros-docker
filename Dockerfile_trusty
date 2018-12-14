@@ -1,4 +1,4 @@
-FROM ripl/lcm:1.4.0
+FROM ripl/lcm:1.4.0_trusty
 
 # set ROS codename
 ENV ROS_DISTRO "indigo"
